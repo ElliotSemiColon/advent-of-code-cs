@@ -1,0 +1,16 @@
+C:\Users\ellio\source\repos\advent of code\day 6\bin\Debug\net5.0\day 6.exe
+C:\Users\ellio\source\repos\advent of code\day 6\bin\Debug\net5.0\day 6.deps.json
+C:\Users\ellio\source\repos\advent of code\day 6\bin\Debug\net5.0\day 6.runtimeconfig.json
+C:\Users\ellio\source\repos\advent of code\day 6\bin\Debug\net5.0\day 6.runtimeconfig.dev.json
+C:\Users\ellio\source\repos\advent of code\day 6\bin\Debug\net5.0\day 6.dll
+C:\Users\ellio\source\repos\advent of code\day 6\bin\Debug\net5.0\ref\day 6.dll
+C:\Users\ellio\source\repos\advent of code\day 6\bin\Debug\net5.0\day 6.pdb
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.csprojAssemblyReference.cache
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.AssemblyInfoInputs.cache
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.AssemblyInfo.cs
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.csproj.CoreCompileInputs.cache
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.dll
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\ref\day 6.dll
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.pdb
+C:\Users\ellio\source\repos\advent of code\day 6\obj\Debug\net5.0\day 6.genruntimeconfig.cache
