@@ -8,22 +8,6 @@ namespace day_7._2
     class Program
     {
 
-        static string[] AllMatches(string input, Regex rgx, int group)
-        {
-            List<string> matches = new List<string>();
-
-            Match match = rgx.Match(input);
-            while (match.Success)
-            {
-                //adds the value of the first capture group to the list 
-                matches.Add(match.Groups[group].Value);
-                match = match.NextMatch();
-            }
-            string[] output = matches.ToArray();
-
-            return output;
-        }
-
         static Dictionary<string, string> BuildNestedDict(string input, Regex rgx)
         {
             Dictionary<string, string> nestedDict = new Dictionary<string, string>();
