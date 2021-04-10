@@ -20,6 +20,7 @@ namespace _8._2
         static string[] GetOperation(string line) //returns opcode, sign and data using the three capture cases
         {
             Regex opData = new Regex(@"(\w{3})\s([-+])([0-9]+)");
+
             return new string[3]{ opData.Match(line).Groups[1].Value, opData.Match(line).Groups[2].Value, opData.Match(line).Groups[3].Value };
         }
 
@@ -49,18 +50,13 @@ namespace _8._2
                        
                         executed.Add(line, null); //happens before the acc is modified so it outputs accurate value
 
-                        if (line == ln) //if line is the line to be flipped this iteration 
-                        {
-                            if (operation[0] == "nop") { operation[0] = "jmp"; } else if (operation[0] == "jmp") { operation[0] = "nop"; }
-                        }
+                        //if line is to be flipped this iteration 
+                        if (line == ln) { if (operation[0] == "nop") { operation[0] = "jmp"; } else if (operation[0] == "jmp") { operation[0] = "nop"; } }
 
                         //Console.WriteLine($"{operation[0]} {operation[1]}{operation[2]}");
 
                         if (operation[0] == "nop") { line++; }
-                        else if (operation[0] == "jmp")
-                        {
-                            if (operation[1] == "+") { line += Int16.Parse(operation[2]); } else { line -= Int16.Parse(operation[2]); }
-                        }
+                        else if (operation[0] == "jmp") { if (operation[1] == "+") { line += Int16.Parse(operation[2]); } else { line -= Int16.Parse(operation[2]); } }
                         else
                         {
                             if (operation[1] == "+") { acc += Int16.Parse(operation[2]); } else { acc -= Int16.Parse(operation[2]); }
@@ -69,16 +65,14 @@ namespace _8._2
                         if (line == ops.Length) { break; } // * or until it reaches the line immediately below the last line
                     }
                 }
-                catch (ArgumentException)
-                {
-                    Console.Write($"\rloop detected at line {line}");
-                }
+                catch (ArgumentException) { Console.Write($"\rloop detected having flipped line {ln}"); }
 
                 if (line == ops.Length)
                 {
                     Console.WriteLine("\nprogram terminates correctly");
+                    //breaks out of foreach so as to not reset acc again
                     break; 
-                } //breaks out of foreach so as to not reset acc again
+                } 
             }
 
             return acc; //returns value of acc when loop is found 
