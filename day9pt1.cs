@@ -27,7 +27,7 @@ namespace _9._1
                     //Console.WriteLine($"{numbers[j + i - preamble]}");
                     for (int k = startIndex; k < preamble; k++) 
                     {
-                        sum = Int32.Parse(numbers[j + i - preamble]) + Int32.Parse(numbers[k + i - preamble]); //finds relative indicies to addd 
+                        sum = Int32.Parse(numbers[j + i - preamble]) + Int32.Parse(numbers[k + i - preamble]); //finds relative indicies to add
                         if (sum == target) { 
                             safe = true;
                             break;
