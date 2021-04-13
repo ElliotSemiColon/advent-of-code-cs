@@ -85,7 +85,7 @@ namespace _10._1
             Console.WriteLine($"\nprocessed input of length {sortedAdapters.Count} | {string.Join(",", sortedAdapters)}"); //debugging
 
             //Console.WriteLine(sortedAdapters.Count); debug
-            Console.WriteLine($"\npuzzle output of length | {CountGaps(sortedAdapters)}"); //takes the sorted list 
+            Console.WriteLine($"\npuzzle output | {CountGaps(sortedAdapters)}"); //takes the sorted list 
 
             Console.ReadKey();
         }
