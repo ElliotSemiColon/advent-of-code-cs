@@ -22,7 +22,7 @@ namespace _10._1
                 if (upper.Count > 1) { upper = MergeSort(upper); }
             }
 
-            while (lower.Count > 0 && upper.Count > 0) //sorts merged lists
+            while (lower.Count > 0 && upper.Count > 0) //sorts and merges lists
             {
                 if (lower[0] <= upper[0]) //looks at top items
                 {
