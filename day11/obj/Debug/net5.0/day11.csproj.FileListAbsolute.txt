@@ -1,0 +1,16 @@
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\bin\Debug\net5.0\day11.exe
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\bin\Debug\net5.0\day11.deps.json
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\bin\Debug\net5.0\day11.runtimeconfig.json
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\bin\Debug\net5.0\day11.runtimeconfig.dev.json
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\bin\Debug\net5.0\day11.dll
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\bin\Debug\net5.0\ref\day11.dll
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\bin\Debug\net5.0\day11.pdb
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.AssemblyInfoInputs.cache
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.AssemblyInfo.cs
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.csproj.CoreCompileInputs.cache
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.dll
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\ref\day11.dll
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.pdb
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.genruntimeconfig.cache
+C:\Users\ellio\Documents\programming\c#\vs\advent of code\day11\obj\Debug\net5.0\day11.csprojAssemblyReference.cache
