@@ -9,7 +9,6 @@ namespace day11
 {
     class Program
     {
-
         static char Lookup(int x, int y, string[] cells) //returns char at x, y
         {
             string row = ""; char target = Convert.ToChar("L"); //default to L if x and y outside of grid (symbolising the lack of populated seats outside the ferry)
@@ -36,7 +35,7 @@ namespace day11
             int total = 0;
             int dx, dy;
 
-            if (Lookup(x, y, cells) == Convert.ToChar(".")) { total = 5; } //with 5 dead neighbours the state of a cell doesnt change, meaning if the cell is floor (".") it wont change
+            if (Lookup(x, y, cells) == Convert.ToChar(".")) { total = 5; } //with 5 dead neighbours the state of a cell doesnt change, meaning if the cell is floor (".") it wont ever change
             else
             {
                 for (int i = 0; i < 9; i++)
@@ -67,8 +66,6 @@ namespace day11
                 x = i % cells[0].Length;
                 if(x == 0) { y++; } //increment y on each loop of x
 
-                //Console.WriteLine($"{y} || {x} = {i} % {cells[0].Length}");
-
                 deadNeighbours = GetNeighbours(x, y, cells);
 
                 if (deadNeighbours == 8) { coords.Add(new int[] { x, y, 1 }); } //sets seat to occupied 
@@ -98,9 +95,6 @@ namespace day11
             string[] rawLines = File.ReadAllLines(@"B:\Elliot Buckingham\Documents\Visual Studio 2019\repos\advent of code\inputs\day11.txt");
             string cellString;
             int occupiedSeats = 0;
-            //Console.WriteLine(string.Join(",", rawLines));
-
-            //Lookup(2, 0, rawLines);
 
             while(rawLines.Length > 0)
             {
@@ -120,18 +114,6 @@ namespace day11
                     rawLines = new string[] { };
                 }
             }
-
-            /* write test 
-            Console.WriteLine(string.Join("\n", rawLines));
-
-            Console.WriteLine("//////////////");
-
-            rawLines = Set(6, 5, rawLines, "p");
-
-            Console.WriteLine(string.Join("\n", rawLines));
-            */
-
-            //Console.WriteLine(Lookup(0,0,rawLines));
 
             Console.ReadKey();
         }
