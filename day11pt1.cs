@@ -56,7 +56,7 @@ namespace day11
             return total;
         }
 
-        static List<int[]> checkCells(string[] cells) //mode set true if updating cell states, set false if counting occupied seats
+        static List<int[]> checkCells(string[] cells) 
         {
             List<int[]> coords = new List<int[]>(); // [x, y, state<1 if populated, 0 if not>]
             int x = 0, y = -1, deadNeighbours;
